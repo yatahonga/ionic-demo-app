@@ -1,3 +1,2 @@
-# ionic-zyssty
+# Ionic Demo App
 
-[Edit on StackBlitz ⚡️](https://jake.stackblitz.com/edit/ionic-zyssty)
