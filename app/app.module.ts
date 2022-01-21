@@ -11,6 +11,8 @@ import { InsightsPage } from '../pages/insights/insights';
 
 import { MoneythorWidgetComponent } from './moneythor-widget/moneythor-widget.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -21,7 +23,7 @@ import { MoneythorWidgetComponent } from './moneythor-widget/moneythor-widget.co
     InsightsPage,
     MoneythorWidgetComponent,
   ],
-  imports: [BrowserModule, IonicModule.forRoot(MyApp)],
+  imports: [HttpClientModule, BrowserModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
