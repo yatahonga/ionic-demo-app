@@ -1,11 +1,11 @@
 <div *ngIf="type === 'tip'; then tipBlock; else serviceBlock"></div>
 
 <ng-template #tipBlock>
-  <h2>Tip {{ parameters.name }}</h2>
+  <h2>Tip {{ options.name }}</h2>
   <div #moneythorContainer></div>
 </ng-template>
 
 <ng-template #serviceBlock>
-  <h2>Service {{ parameters.name }}</h2>
+  <h2>Service {{ options.name }}</h2>
   <div #moneythorContainer></div>
 </ng-template>

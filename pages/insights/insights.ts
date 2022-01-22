@@ -17,7 +17,8 @@ export class InsightsPage {
   };
 
   moneythorParam2 = { 
-    name: "getcashflowchart"
+    name: "getcashflowchart",
+    parameters: { currency: 'USD' }
   };
 
 }

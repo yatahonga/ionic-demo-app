@@ -11,6 +11,7 @@ import { InsightsPage } from '../pages/insights/insights';
 
 import { MoneythorWidgetComponent } from './moneythor-widget/moneythor-widget.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MoneythorApiService } from './moneythor-api.service';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,6 @@ import { HttpClientModule } from '@angular/common/http';
     TabsPage,
     InsightsPage,
   ],
-  providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }],
+  providers: [MoneythorApiService, { provide: ErrorHandler, useClass: IonicErrorHandler }],
 })
 export class AppModule {}
