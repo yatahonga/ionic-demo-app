@@ -10,7 +10,6 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { InsightsPage } from '../pages/insights/insights';
 
 import { MoneythorWidgetComponent } from './moneythor-widget/moneythor-widget.component';
-
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
