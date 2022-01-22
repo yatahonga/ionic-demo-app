@@ -5,5 +5,15 @@
 </ion-header>
 
 <ion-content padding>
-  <moneythor-widget tipKey="1234567890" language="en"></moneythor-widget>
+  <moneythor-widget
+    type="tip"
+    [parameters]="moneythorParam1"
+  ></moneythor-widget>
+
+  <hr />
+
+  <moneythor-widget
+    type="service"
+    [parameters]="moneythorParam2"
+  ></moneythor-widget>
 </ion-content>

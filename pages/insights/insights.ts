@@ -11,4 +11,13 @@ export class InsightsPage {
 
   }
 
+  moneythorParam1 = { 
+    name: "0123456789",
+    language: "en"
+  };
+
+  moneythorParam2 = { 
+    name: "getcashflowchart"
+  };
+
 }

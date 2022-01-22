@@ -1,3 +1,11 @@
-<h2>Tip Component {{ tipKey }}</h2>
+<div *ngIf="type === 'tip'; then tipBlock; else serviceBlock"></div>
 
-<div #tipContainer>This text should be replaced...</div>
+<ng-template #tipBlock>
+  <h2>Tip {{ parameters.name }}</h2>
+  <div #moneythorContainer></div>
+</ng-template>
+
+<ng-template #serviceBlock>
+  <h2>Service {{ parameters.name }}</h2>
+  <div #moneythorContainer></div>
+</ng-template>
