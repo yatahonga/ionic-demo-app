@@ -3,22 +3,18 @@ import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-insights',
-  templateUrl: 'insights.html'
+  templateUrl: 'insights.html',
 })
 export class InsightsPage {
+  constructor(public navCtrl: NavController) {}
 
-  constructor(public navCtrl: NavController) {
-
-  }
-
-  moneythorParam1 = { 
-    name: "0123456789",
-    language: "en"
+  moneythorParam1 = {
+    name: '0123456789',
+    language: 'en',
   };
 
-  moneythorParam2 = { 
-    name: "getcashflowchart",
-    parameters: { currency: 'USD' }
+  moneythorParam2 = {
+    name: 'getcashflowchart',
+    parameters: { currency: 'USD' },
   };
-
 }

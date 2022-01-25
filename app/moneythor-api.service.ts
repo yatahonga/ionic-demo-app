@@ -5,12 +5,13 @@ import { HttpClient } from '@angular/common/http';
 export class MoneythorApiService {
   constructor(private httpClient: HttpClient) {}
 
-  TOKEN =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NDI4MzU0OTYsImV4cCI6MTY0MjkyMTg5NiwiaXNzIjoiTW9uZXl0aG9yIiwic3ViIjoiZGVtb3VzZXIyQG1haWwuY29tIn0.b6LBFSwkyq7XyMVgqrpe73LVOYAuV1KHQHc4jABx-cE';
+  server = 'https://demo.moneythor.com/fpm/api/v4';
+
+  TOKEN = 'REPLACE_WITH_VALID_JWT_TOKEN';
 
   public service(name: string, parameters: any) {
     return this.httpClient.post(
-      'https://demo.moneythor.com/fpm/api/v4/service',
+      this.server + '/service',
       {
         name: name,
         format: 'html',
